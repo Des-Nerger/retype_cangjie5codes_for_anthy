@@ -1,5 +1,5 @@
 [package]
-name = "retyping_cangjie5codes_for_anthy"
+name = "retype_cangjie5codes_for_anthy"
 version = "0.1.0"
 edition = "2021"
 

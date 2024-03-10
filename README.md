@@ -1,8 +1,8 @@
-# retyping_cangjie5codes_for_anthy
+# retype_cangjie5codes_for_anthy
 ```sh
 $ sudo apt install libxdo-dev
 $ cargo build --release
-$ sleep 15 && target/release/retyping_cangjie5codes_for_anthy </path/to/libcangjie-1.2/data/table.txt
+$ sleep 15 && target/release/retype_cangjie5codes_for_anthy </path/to/libcangjie-1.2/data/table.txt
 ```
 * Quickly (in 15 secs):
   * open a new terminal window,
