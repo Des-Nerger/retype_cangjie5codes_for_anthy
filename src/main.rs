@@ -8,11 +8,11 @@
 )]
 
 use {
+	arrayvec::ArrayVec,
 	enigo::{
 		Direction::{Click, Press, Release},
 		Enigo, Key, Keyboard, Settings,
 	},
-	smallvec::SmallVec,
 	std::{
 		fmt::Write,
 		io::{self, BufRead},
@@ -41,7 +41,7 @@ fn main() {
 			continue;
 		}
 		const MAX_NUM_FIELDS: usize = 14;
-		let fields = inpLine.splitn(MAX_NUM_FIELDS, ' ').collect::<SmallVec<[_; MAX_NUM_FIELDS]>>();
+		let fields = inpLine.splitn(MAX_NUM_FIELDS, ' ').collect::<ArrayVec<_, MAX_NUM_FIELDS>>();
 		if ![fields[2], fields[5]].contains(&"1") {
 			continue;
 		}
@@ -63,6 +63,5 @@ fn main() {
 			_ = enigo.text(outpLineBuf);
 			enigo.switchOver_inputMethod();
 		}
-		assert_eq!(fields.spilled(), false);
 	}
 }

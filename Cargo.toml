@@ -1,11 +1,11 @@
 [package]
 name = "retype_cangjie5codes_for_anthy"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 
 [profile.release]
 strip = true
 
 [dependencies]
-smallvec = "1"
-enigo = "0.2.0-rc2"
+arrayvec = "0"
+enigo = "0.2"
